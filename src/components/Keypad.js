@@ -6,7 +6,7 @@ const logChange = () => {
 function Keypad (){
     return (
         <div>
-        <label for="#keypad">KEYPAD</label>
+        <label>KEYPAD</label>
         <input onChange={logChange} id="keypad" type="password"/>
         </div>
     )
