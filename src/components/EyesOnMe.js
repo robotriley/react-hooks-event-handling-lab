@@ -1,19 +1,17 @@
-// Code EyesOnMe Component Here
-const good = () => {
-  console.log("Good!")
-}
-
-const hey = () => {
-  console.log("Hey! Eyes on me!")
-}
-
 const EyesOnMe = () => {
-  return (
+  const handleFocus = () => {
+    console.log('Good!')
+
+  }
+
+  const handleBlur = () => {
+    console.log('Hey! Eyes on me!')
+  }
+  return(
     <div>
-      <button onFocus={ good } onBlur={ hey } >Eyes on me</button>
+      <button onFocus={handleFocus} onBlur={handleBlur} >Eyes on me</button>
     </div>
   )
 }
 
-
-export default EyesOnMe;
+export default EyesOnMe
